@@ -1,4 +1,4 @@
-### LIST OF CURATED ALGORITHM QUESTIONS FOR INTERVIEW BASED ON MOST COMMON, USEFULNESS:
+#### LIST OF CURATED ALGORITHM QUESTIONS FOR REVIEW AND INTERVIEW PURPOSES:
 
  - https://www.teamblind.com/article/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
 
