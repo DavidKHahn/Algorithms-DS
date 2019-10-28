@@ -16,7 +16,8 @@ function greatestCommonDivisor(a, b){
   }
 
   greatestCommonDivisor(14, 21);
-  // 7
+
+// 7
 
 // FANCY WAY
 // function greatestCommonDivisor(a, b){
