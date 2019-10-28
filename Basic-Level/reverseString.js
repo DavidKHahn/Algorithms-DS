@@ -29,3 +29,9 @@ console.log(reverse('cat'))
 // }
 
 // console.log(reverse('cat'))
+
+// function reverse(str){
+//     if(!str || str.length <2) return str;
+
+//     return str.split('').reverse().join('');
+//   }
