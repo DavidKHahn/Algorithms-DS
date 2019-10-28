@@ -6,4 +6,4 @@ function fibonacci(n){
     }
 
 fibonacci(12);
-//144
+// 144

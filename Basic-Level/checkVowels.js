@@ -1,6 +1,6 @@
 function vowels(str) {
-    const matches = str.match(/[aeiou]/gi);
-    return matches ? matches.length : 0
+    const matches = str.match(/[aeiou]/gi); // 'matches' will 'match' for string which contains 'aeiou'
+    return matches ? matches.length : 0 // ternary operator which will return 'matches' if there is a match otherwise '0'
 }
 /*REGEX:
 
