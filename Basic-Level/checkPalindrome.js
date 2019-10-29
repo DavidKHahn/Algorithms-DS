@@ -12,3 +12,7 @@ console.log(isPalindrome('madam'))
 // true
 console.log(isPalindrome('toyota'))
 // false
+
+// const checkPalindrom = (str) => str == str.split('').reverse().join('');
+// checks if the string equals the string's index after being reversed in order
+// split turns string into an array of words
