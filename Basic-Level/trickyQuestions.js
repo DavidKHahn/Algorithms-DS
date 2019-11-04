@@ -25,3 +25,21 @@ let b  = function(){
 };
 
 console.log(b(1,2,3,4,5))
+
+var football = {
+    n: function() {
+        console.log('N');
+    return football; // return is required to run next function
+    },
+    f: function() {
+        console.log('F');
+    return football;
+    },
+    l: function() {
+        console.log('L');
+    return football;
+    }
+}
+
+football.n().f().l();
+// should print N, F, and L
