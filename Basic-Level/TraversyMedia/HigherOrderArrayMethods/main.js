@@ -169,3 +169,20 @@ console.log(sortAgesAsc)
 
 
 // Reduce
+
+let ageSum = 0;
+for(let i = 0; i < ages.length; i++) {
+  ageSum += ages[i];
+}
+
+console.log(ageSum);
+// 460
+
+// acc -> accumulator (total), idx -> index (age), zero represents starting point
+const reduceAges = ages.reduce((acc, idx) => acc + idx, 0)
+console.log(reduceAges);
+
+// Get total years for all companies
+const totalYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+
+console.log(totalYears)
