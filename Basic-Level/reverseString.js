@@ -22,7 +22,7 @@ console.log(reverse('cat'))
 //     let rtnStr = []; // creates an empty array object
 //     if(!str || typeof str != 'string' || str.length < 2 ) return str; // checks if string exists or is greater than 2 characters
 
-//     for (let i = str.length - 1; i >= 0; i--){ // reversed for loop
+//     for (let i = str.length - 1; i >= 0; i--){ // reversed for loop which starts at str.length - 1 to match correct position
 //         rtnStr.push(str[i]); // adds each char of string in reverse order
 //     }
 //     return rtnStr.join(''); // creates and returns a new string
