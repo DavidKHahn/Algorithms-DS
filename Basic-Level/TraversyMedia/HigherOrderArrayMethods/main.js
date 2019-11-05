@@ -104,3 +104,68 @@ console.log(agesSquare)
 
 // Sort
 
+// Sorting out companies by their start dates (earliest to latest)
+// const sortedCompanies = companies.sort((c1, c2) => {
+//   if (c1.start > c2.start) {
+//     return 1;
+//   } else {
+//     return -1;
+//   }
+// });
+
+// console.log(sortedCompanies)
+
+const sortedCompanyDates = companies.sort((a, b) => (a.start > b.start ? 1 : -1))
+
+console.log(sortedCompanyDates)
+// [ { name: 'Company One',
+//     category: 'Finance',
+//     start: 1981,
+//     end: 2004 },
+//   { name: 'Company Nine',
+//     category: 'Retail',
+//     start: 1981,
+//     end: 1989 },
+//   { name: 'Company Seven',
+//     category: 'Auto',
+//     start: 1986,
+//     end: 1996 },
+//   { name: 'Company Six',
+//     category: 'Finance',
+//     start: 1987,
+//     end: 2010 },
+//   { name: 'Company Four',
+//     category: 'Retail',
+//     start: 1989,
+//     end: 2010 },
+//   { name: 'Company Two',
+//     category: 'Retail',
+//     start: 1992,
+//     end: 2008 },
+//   { name: 'Company Three',
+//     category: 'Auto',
+//     start: 1999,
+//     end: 2007 },
+//   { name: 'Company Five',
+//     category: 'Technology',
+//     start: 2009,
+//     end: 2014 },
+//   { name: 'Company Eight',
+//     category: 'Technology',
+//     start: 2011,
+//     end: 2016 } ]
+
+// Sort Ages
+
+const sortAgesDes = ages.sort((a, b) => b - a)
+
+console.log(sortAgesDes)
+// [ 64, 61, 54, 45, 44, 33, 32, 25, 21, 20, 16, 15, 13, 12, 5 ]
+
+const sortAgesAsc = ages.sort((a, b) => a - b)
+
+console.log(sortAgesAsc)
+// [ 5, 12, 13, 15, 16, 20, 21, 25, 32, 33, 44, 45, 54, 61, 64 ]
+
+
+// Reduce
