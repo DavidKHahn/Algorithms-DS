@@ -9,7 +9,7 @@ function isAnagram(str1, str2) {
 // Helper function
 function formatStr(str) {
     return str
-// regex: strip anything that is not word character including spaces (letter or number) and replace /w empty ''
+// regex: strip anything that is not word character (i.e.: letter or number) including spaces and replace /w empty ''
         .replace(/[^\w]/g, '')
         .toLowerCase()
         .split('')

@@ -32,7 +32,7 @@ for(let char of str){
     return revString;
 }
 
-console.log(reverseString('Winston'))
+console.log(reverseString('Winston!'))
 
 // 4
 function reverseString(str) {
@@ -49,7 +49,7 @@ function reverseString(str) {
     return revString;
 }
 
-console.log(reverseString('Winston'))
+console.log(reverseString('Anthony Davis'))
 
 // 6
 function reverseString(str) {
