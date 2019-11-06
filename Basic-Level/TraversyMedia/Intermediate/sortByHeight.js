@@ -8,13 +8,15 @@ function sortByHeight(a) {
     const arr1 = [];
     const arr2 = [];
 
-    a.forEach((val, i) => {
-        if(val === -1) {
-            arr1.push(i)
-        } else {
-            arr2.push(val)
-        }
-    });
+    // a.forEach((val, i) => {
+    //     if(val === -1) {
+    //         arr1.push(i)
+    //     } else {
+    //         arr2.push(val)
+    //     }
+    // });
+
+    a.forEach((val, i) => val === -1 ? arr1.push(i) : arr2.push(val));
 
     const sortArr = arr2.sort((a, b) => a - b);
 
