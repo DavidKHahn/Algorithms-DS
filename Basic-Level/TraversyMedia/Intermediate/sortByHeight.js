@@ -1,8 +1,8 @@
 // Some people are standing in a row in a park. There are trees between them which cannot be
 // moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees.
 // ex.
-// a = [-1, 150, 160, 190, 170, -1, -1, 180]
-// sortByHeight(a) == [-1, 150, 160, 190, 170, -1, -1, 180]
+// a = [-1, 150, 190, 170, -1, -1, 160, 180]
+// sortByHeight(a) == [-1, 150, 190, 170, -1, -1, 160, 180]
 
 function sortByHeight(a) {
     const arr1 = [];
@@ -25,5 +25,5 @@ function sortByHeight(a) {
     return sortArr;
 }
 
-const a = [-1, 150, 160, 190, 170, -1, -1, 180]
+const a = [-1, 150, 190, 170, -1, -1, 160, 180]
 console.log(sortByHeight(a));
