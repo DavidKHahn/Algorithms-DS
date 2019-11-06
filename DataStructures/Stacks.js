@@ -1,4 +1,4 @@
-// Stacks
+// Stacks - First in last out
 
 // functions: push, pop, peek, length
 var letters = []; // this is our stack
