@@ -10,21 +10,25 @@ function SimpleScript(str) {
     let duplicateChar = '';
 
     str.split('').forEach(function(char) {
-// checks if character exists then adds 1
+    // checks if character exists then adds 1
         if(charMap[char]) {
             charMap[char]++;
-// else mark 1 for the character
+    // else mark 1 for the character
         } else {
             charMap[char] = 1;
         }
     });
 
-    for (let char in convertArr) {
-      if (convertArr[char] === convertArr[char])
-      convertArr[char]++;
-      duplicateChar = char
-    }
-    return duplicateChar;
-}
+    // for in loop used for objects rather than an array
+    for(let char in charMap) {
+        // checks if charMap char is greater than maxNum if true then replaces prev maxNum
+                if(charMap[char] > maxNum) {
+                    maxNum = charMap[char];
+                // maxChar equals the current character
+                duplicateChar = char;
+                }
+            }
+            return duplicateChar;
+        }
 
-console.log(SimpleScript(312113))
+console.log(SimpleScript('312113'))
