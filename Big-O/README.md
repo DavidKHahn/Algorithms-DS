@@ -23,6 +23,8 @@
     - During interviews we generally drop the constants as the long the line is linear then Big O should be represented as o(n).
 
 - Rule 3: Different terms for inputs
+    - Make sure to know that we have different arrays or notations for each array (different inputs have different variables).  Any step that happens in same indentation you add if nested then you multiply.
+
 - Rule 4: Drop Non Dominants
 
 
