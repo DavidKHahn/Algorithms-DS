@@ -43,3 +43,5 @@
  - Allocations
 
 - When we discuss space complexity, we're talking about additional space not the space taken up by the input.  We have control of what happens inside the function so we have to ask if we're adding any space (i.e. setting up and filling an empty array running 'n' times).
+
+- Realizing that programming has limits with space and speed makes us more aware of the decisions made for long term scalability ultimately giving us a better idea of what is good code.
