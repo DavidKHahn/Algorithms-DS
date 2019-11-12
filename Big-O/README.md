@@ -18,7 +18,10 @@
 
 - Rule 1: Worst Case
     - Big O only cares about worst case scenario.
+
 - Rule 2: Remove Constants
+    - During interviews we generally drop the constants as the long the line is linear then Big O should be represented as o(n).
+
 - Rule 3: Different terms for inputs
 - Rule 4: Drop Non Dominants
 
