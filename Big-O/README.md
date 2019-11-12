@@ -15,6 +15,7 @@
  - Big-O Complexity revolves around Operations needed for Elements (Algorithmic efficiency).
  - Big-O allows us and concerns us with how many steps it takes in a function.
  - With Big O, we're worried about scale as things grow larger and larger.
+ - Readability sometimes may be more important at times. Sometimes optimizing for time and space can negatively affect the readability of code (i.e. in a startup readability may be more important long term due to less budget and working product).
 
     O(n) - Linear: Number of operations x Elements
     O(1) - Constant Time: Same number of operations
@@ -25,7 +26,7 @@
 **Rule Book**
 
 - Rule 1: Worst Case
-    - Big O only cares about worst case scenario.
+    - Big O describes the upper bounds of our estimates by measuring the worst case scenario to be prepared.
 
 - Rule 2: Remove Constants
     - During interviews we generally drop the constants as the long the line is linear then Big O should be represented as o(n).
