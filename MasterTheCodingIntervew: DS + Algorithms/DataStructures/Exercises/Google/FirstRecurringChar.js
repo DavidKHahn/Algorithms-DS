@@ -27,7 +27,7 @@ console.log(firstRecurringChar([2, 5, 1, 2, 3, 5, 1, 2, 4])); // 2
 console.log(firstRecurringChar([1, 5, 1, 2, 3, 5, 1, 2, 4])); // 1
 console.log(firstRecurringChar([2, 3, 4, 5])); // undefined
 
-// Improved version:
+// Improved version using Hashtables:
 function firstRecurringChar2(input){
     // creating a new object which keeps track of all items in array
     let map = {};
