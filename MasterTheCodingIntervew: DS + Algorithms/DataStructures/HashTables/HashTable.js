@@ -73,4 +73,12 @@ Understand how things work under the hood.
 
 In JS we can use for in to loop over items in an object but is very slow and also there is no guaranteed order.
 When we retrieve items they are unordered.
+
+Hash Tables vs Arrays:
+
+- Searching through an array for an item takes a long time.  With hash tables searching is faster.
+- Databases generally use hashtables and gives data back right away.
+- Arrays let you quickly look up value for a given key.
+- Hash tables are somewhat of an hack to layer on top of an array to use flexible keys instead of 0,1,2,3...
+- Hashtables have no concept of order whereas arrays have each item placed next to each other.
 */
