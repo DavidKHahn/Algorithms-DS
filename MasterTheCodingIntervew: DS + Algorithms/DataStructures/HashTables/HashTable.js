@@ -37,6 +37,22 @@ _hash(key) {
         } // o(1) and o(i) with collision or lack of space
         return undefined
     }
+
+    keys() {
+    // create empty array
+        const keysArray = [];
+        // run through data using for loop
+        for (let i = 0; i < this.data.length; i++){
+            // if data exists in array
+            if (this.data[i]) {
+                // push the key into empty array
+                // removes outer array with '[0]'
+                keysArray.push(this.data[i][0][0])
+            }
+        }
+        // return keys
+        return keysArray
+    }
 }
 
 // only want 50 shelfs of memory
@@ -44,7 +60,7 @@ const myHashTable = new HashTable(50);
 
 myHashTable.set('grapes', 10000);
 console.log(myHashTable.set('apples', 54));
-console.log(myHashTable.get('grapes'));
-
+console.log(myHashTable.set('oranges', 2));
+console.log(myHashTable.keys());
 // console.log(myHashTable._hash('hello_world'))
 // 35
