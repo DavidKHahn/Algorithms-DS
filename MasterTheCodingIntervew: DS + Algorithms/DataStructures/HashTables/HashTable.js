@@ -64,3 +64,13 @@ console.log(myHashTable.set('oranges', 2));
 console.log(myHashTable.keys());
 // console.log(myHashTable._hash('hello_world'))
 // 35
+
+/*
+Downside of Hashtables - looping through the entire memory space but with arrays it would have been easier since in this example we looped 50x instead of just 3.
+Inside thought process: Objects might not be a good idea for this method 'key'.
+Understand how things work under the hood.
+
+
+In JS we can use for in to loop over items in an object but is very slow and also there is no guaranteed order.
+When we retrieve items they are unordered.
+*/
