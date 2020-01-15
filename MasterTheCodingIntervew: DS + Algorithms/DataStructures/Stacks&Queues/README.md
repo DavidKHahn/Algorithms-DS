@@ -13,6 +13,8 @@ Stack Methods:
 Queues: Think of them as an entrance to a roller coaster, first person gets to go then the next up until the last one (FIFO - First In First Out) which is opposite of Stacks.
 
 - Used often in programming interviews and problems (ex. Restaurant app, Uber or Lyft, printers often use Queues for waiting in line situations).
+- Arrays are not recommended since shifting all the indexes for Queues/Stacks is not a logical method.
+- Javascript does not contain its own Stacks/Queues.
 
 Queues Methods:
 - lookup O(n)
