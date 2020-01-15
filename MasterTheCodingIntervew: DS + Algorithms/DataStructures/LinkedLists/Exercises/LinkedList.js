@@ -91,6 +91,7 @@ class LinkedList {
         // check params but we can assume that the index is a valid number/index
         let counter = 0;
         let currentNode= this.head;
+        // O(n) due to loop
         while (counter !== index) {
             currentNode = currentNode.next;
             counter++;
