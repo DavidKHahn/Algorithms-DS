@@ -79,3 +79,4 @@ Javascript Run-Time Environment (included in the browser):
 INTERVIEW TIPS:
 - One of the most common interview questions is "Implement Queue using Stacks" (https://leetcode.com/problems/implement-queue-using-stacks/description/).
 - https://repl.it/@aneagoie/Data-Structures-Queues-2-stacks (Solution)
+- Do not use Arrays with Queues (Common Interview Question).
