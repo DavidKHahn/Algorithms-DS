@@ -56,7 +56,7 @@ class LinkedList {
         this.length++;
         return this;
     }
-    // list out LinkedList in array
+    // prints out LinkedList values in array
     printList() {
         const array = [];
         let currentNode = this.head;
@@ -105,5 +105,6 @@ myLinkedList.append(5)
 myLinkedList.append(16)
 myLinkedList.prepend(1)
 myLinkedList.insert(2, 99)
+myLinkedList.insert(20, 88)
 console.log(myLinkedList.printList());
 // console.log(myLinkedList)
