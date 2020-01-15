@@ -69,18 +69,26 @@ class LinkedList {
         return array;
     }
     insert(index, value) {
+        // check params
+        // as long as index is greater than or equal to this.length
+        if (index >= this.length) {
+            return this.append(value);
+        }
+        const newNode = {
+            value,
+            next: null
+        };
 
     }
 }
+// *-*
+//  *
+
 // instantiate a LinkedList
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5)
 myLinkedList.append(16)
-// LinkedList {
-//     head: { value: 10, next: { value: 5, next: [Object] } },
-//     tail: { value: 16, 2next: null },
-//     length: 3 }
 myLinkedList.prepend(1)
-myLinkedList.printList();
-// myLinkedList.insert(2, 99)
-console.log(myLinkedList)
+myLinkedList.insert(2, 99)
+console.log(myLinkedList.printList());
+// console.log(myLinkedList)
