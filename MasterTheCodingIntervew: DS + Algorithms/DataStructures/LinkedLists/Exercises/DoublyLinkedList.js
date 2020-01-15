@@ -84,15 +84,22 @@ class DoublyLinkedList {
         }
         const newNode = {
             value,
-            next: null
+            next: null,
+            prev: null
         };
         // points to the leader of the list
         const leader = this.traverseToIndex(index-1)
-        const holdingPointer = leader.next;
-        // deleted reference of '5' but saved the reference to it with 'holdingPointer'
+        const follower = leader.next;
+        // get leader to point to the newNode
         leader.next = newNode;
-        newNode.next = holdingPointer;
+        // newNode should point to the leader
+        newNode.prev = leader;
+        // newNode should point to the follower
+        newNode.next = follower;
+        // follower will point back the newNode
+        follower.prev = newNode;
         this.length++;
+        console.log(this)
         return this.printList()
     }
     traverseToIndex(index){
@@ -127,7 +134,7 @@ myLinkedList.append(5)
 myLinkedList.append(16)
 myLinkedList.prepend(1)
 console.log(myLinkedList.printList());
-// myLinkedList.insert(2, 99)
+myLinkedList.insert(1, 99)
 // myLinkedList.insert(20, 88)
 // myLinkedList.remove(2); // 99 gets deleted
 // myLinkedList.remove(2); // 5 gets deleted
