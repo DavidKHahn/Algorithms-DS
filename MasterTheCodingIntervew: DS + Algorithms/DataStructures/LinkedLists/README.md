@@ -42,4 +42,8 @@ Example:
         In low level languages you have to manually delete unreferenced store of memory but you get to also manage your own memory and make it fast and efficient.
         */
 
+INTERVIEW TIPS:
+
+ - Draw out step by step, think about the steps.
+
 USEFUL LINK: https://visualgo.net/en/list

@@ -117,6 +117,15 @@ class DoublyLinkedList {
         // check params
         // grab the leader
         const leader = this.traverseToIndex(index-1);
+        const follower = leader.next;
+        // get leader to point to the newNode
+        leader.next = newNode;
+        // newNode should point to the leader
+        newNode.prev = leader;
+        // newNode should point to the follower
+        newNode.next = follower;
+        // follower will point back the newNode
+        follower.prev = newNode;
         // grabs unwanted node  with leader.next
         const unwantedNode = leader.next;
         // get the pointer after the unwanted node to equal the new pointer
