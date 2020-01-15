@@ -42,8 +42,22 @@ Example:
         In low level languages you have to manually delete unreferenced store of memory but you get to also manage your own memory and make it fast and efficient.
         */
 
-INTERVIEW TIPS:
+Single vs Double Linked Lists?
+- Pros of Singly Linked Lists
+    - Less memory, less operations (a little bit faster).
+    - Fast insertion and deletion.
+- Cons of Singly Linked Lists
+    - Can not traversed backwards (if we ever lose reference to this.head node then we can lose list in memory forver).
 
+- Pros of Doubly Linked Lists
+    - Can be iterated or traversed from front or back (good when no limit of memory use and searching purposes)
+    - If you need to delete a prev node you don't need to traverse from head node and find what the prev node is which a singly linked list has no concept of.
+- Cons of Doubly Linked Lists
+    - Fairly complex to implement and requires more memory/storage.
+    - Extra operations to perform for insert/delete.
+
+INTERVIEW TIPS:
  - Draw out step by step, think about the steps.
+ - Most of the time Singly Linked Lists are asked in interviews.
 
 USEFUL LINK: https://visualgo.net/en/list
