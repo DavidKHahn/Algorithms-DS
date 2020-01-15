@@ -98,6 +98,19 @@ class LinkedList {
         }
         return currentNode;
     }
+    remove(index) {
+        // check params
+        // grab the leader
+        const leader = this.traverseToIndex(index-1);
+        // grabs unwanted node  with leader.next
+        const unwantedNode = leader.next;
+        // get the pointer after the unwanted node to equal the new pointer
+        leader.next = unwantedNode.next;
+        // decrease node by 1
+        this.length--;
+        // returns values in LinkedList
+        return this.printList();
+    }
 }
 
 // instantiate a LinkedList
