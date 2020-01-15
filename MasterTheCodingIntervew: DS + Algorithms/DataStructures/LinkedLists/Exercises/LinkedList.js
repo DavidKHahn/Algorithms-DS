@@ -1,4 +1,4 @@
-// 1 --> 10 --> 5 --> 16
+// 1 --> 10 --> 99 --> 5 --> 16
 
 // let myLinkedList = {
 //     head: {
@@ -56,6 +56,21 @@ class LinkedList {
         this.length++;
         return this;
     }
+    // list out LinkedList in array
+    printList() {
+        const array = [];
+        let currentNode = this.head;
+        // as long as there is a current node and not pointing to a null terminator
+        while (currentNode !== null) {
+        // push currentNode value into array
+            array.push(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        return array;
+    }
+    insert(index, value) {
+
+    }
 }
 // instantiate a LinkedList
 const myLinkedList = new LinkedList(10);
@@ -66,4 +81,6 @@ myLinkedList.append(16)
 //     tail: { value: 16, 2next: null },
 //     length: 3 }
 myLinkedList.prepend(1)
+myLinkedList.printList();
+// myLinkedList.insert(2, 99)
 console.log(myLinkedList)
