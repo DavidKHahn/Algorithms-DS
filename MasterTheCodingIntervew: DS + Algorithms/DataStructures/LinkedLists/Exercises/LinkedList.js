@@ -12,6 +12,15 @@
 //         }
 //     }
 // }
+
+// instantiate the Node class with a value property and next property
+// class Node {
+//     constructor(value) {
+//         this.value = value;
+//         this.next = null;
+//     }
+// }
+
 class LinkedList {
     constructor(value) {
         // keeps track of the head
@@ -54,7 +63,7 @@ myLinkedList.append(5)
 myLinkedList.append(16)
 // LinkedList {
 //     head: { value: 10, next: { value: 5, next: [Object] } },
-//     tail: { value: 16, next: null },
+//     tail: { value: 16, 2next: null },
 //     length: 3 }
 myLinkedList.prepend(1)
 console.log(myLinkedList)
