@@ -120,5 +120,7 @@ myLinkedList.append(16)
 myLinkedList.prepend(1)
 myLinkedList.insert(2, 99)
 myLinkedList.insert(20, 88)
-console.log(myLinkedList.printList());
+myLinkedList.remove(2); // 99 gets deleted
+myLinkedList.remove(2); // 5 gets deleted
+console.log(myLinkedList.printList(2));
 // console.log(myLinkedList)
