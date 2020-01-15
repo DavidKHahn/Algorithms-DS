@@ -1,4 +1,4 @@
-// 10 --> 5 --> 16
+// 1 --> 10 --> 5 --> 16
 
 // let myLinkedList = {
 //     head: {
@@ -36,15 +36,25 @@ class LinkedList {
         this.length++; // 2
         return this; // LinkedList reference
     }
+    prepend(value){
+        const newNode = {
+            value,
+            next: null
+        };
+        // created a pointer which points to the very first item on the list
+        newNode.next = this.head;
+        this.head = newNode;
+        this.length++;
+        return this;
+    }
 }
 // instantiate a LinkedList
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5)
 myLinkedList.append(16)
-
 // LinkedList {
 //     head: { value: 10, next: { value: 5, next: [Object] } },
 //     tail: { value: 16, next: null },
 //     length: 3 }
-
+myLinkedList.prepend(1)
 console.log(myLinkedList)
