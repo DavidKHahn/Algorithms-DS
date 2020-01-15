@@ -78,11 +78,26 @@ class LinkedList {
             value,
             next: null
         };
-
+        // points to the leader of the list
+        const leader = this.traverseToIndex(index-1)
+        const holdingPointer = leader.next;
+        // deleted reference of '5' but saved the reference to it with 'holdingPointer'
+        leader.next = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
+        return this.printList()
+    }
+    traverseToIndex(index){
+        // check params but we can assume that the index is a valid number/index
+        let counter = 0;
+        let currentNode= this.head;
+        while (counter !== index) {
+            currentNode = currentNode.next;
+            counter++;
+        }
+        return currentNode;
     }
 }
-// *-*
-//  *
 
 // instantiate a LinkedList
 const myLinkedList = new LinkedList(10);
