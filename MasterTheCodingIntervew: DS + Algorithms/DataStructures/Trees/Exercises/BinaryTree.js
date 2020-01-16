@@ -43,18 +43,38 @@ class BinarySearchTree {
         }
     }
     lookup(value){
+        // checks if root doesn't exist
+        if (!this.root) {
+            return false;
+        }
+        let currentNode = this.root;
+        while(currentNode) {
+            // if value is less than currentNode value go left
+            if(value < currentNode.value) {
+                currentNode = currentNode.left
+            // if value is greater than currentNode value go right
+            } else if (value > currentNode.value) {
+                currentNode = currentNode.right
+            } else if (currentNode.value === value) {
+                return currentNode;
+            }
+        }
+        // return false if we don't find anything
+        return false;
     }
     // remove
 }
 
 const tree = new BinarySearchTree();
 tree.insert(9);
-// tree.insert(4);
-// tree.insert(20);
-// tree.insert(170);
-// tree.insert(15);
-// tree.insert(1);
-console.log(JSON.stringify(traverse(tree.root))) // {"value":9,"left":null,"right":null}
+tree.insert(4);
+tree.insert(20);
+tree.insert(170);
+tree.insert(15);
+tree.insert(1);
+console.log(tree.lookup(170))
+console.log(tree.lookup(20))
+// console.log(JSON.stringify(traverse(tree.root))) // {"value":9,"left":null,"right":null}
 //      9
 //  4       20
 //1   6   15  170
