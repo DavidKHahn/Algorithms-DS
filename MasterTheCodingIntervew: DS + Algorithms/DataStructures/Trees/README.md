@@ -82,6 +82,15 @@ Binary Heap:
 - Slower than BST but there is an idea of priority, insertion order, bubble up inserts based on priority (most of the time fast inserts).
 - Good for finding Max or Min Heap (findMax or findMin: O(N)).
 
+Trie:
+- Most often associated with text and most cases can outperform BST, Hash Tables and most other DS based on search types.
+- Allows if word or part of word exists in a body of a text.
+- Usually has an empty root node and can have multiple children.
+- Power of Trie comes from searching for something for instance letter N returns two words associated with it.
+- Pre-fix Trie: a tree-like DS geared towards solving a problem specific to strings (auto-completion for words, searching words in a Dictionary or IP routing).
+- Big(O) of finding a word: O(Find the length of the word)
+- Space complexity: Major advantage due to prefixes since we do not store it multiple times while children link letters to multiple words (Do have not store the letters not in use).
+
 Common Interview Questions:
 - Why a unbalanced search tree is bad?
 - Long Linked List and instead of being able to do O(log N) searches are O(n) linear time, loop through more items. AVL and Red Black Trees allows us to balanced a BST for performance optimizations.
