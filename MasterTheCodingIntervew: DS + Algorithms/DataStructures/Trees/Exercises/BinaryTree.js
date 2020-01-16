@@ -48,6 +48,7 @@ class BinarySearchTree {
             return false;
         }
         let currentNode = this.root;
+        // looping using 'divide and conquer' not the entire thing (dividing up so we don't visit all the nodes)
         while(currentNode) {
             // if value is less than currentNode value go left
             if(value < currentNode.value) {
