@@ -19,6 +19,8 @@ Binary Search Tree (subset of BT):
 - Preserves relationships.
 - Keep going to the right the number increases and to the left is decreasing.
 - A node can only have two children.
+- Compared to Hash Tables, BST contains sorted data and structure of parent-child relationship.
+- An array or object will have faster operations on avg.
 
 Binary Search Tree Methods:
 - lookup O(logN)
@@ -37,6 +39,15 @@ Binary Search Tree Methods:
     if we know how many levels (height) then we can find how many total nodes there are
     Log n simply means that based on the height the max number of decisions (divide & conquer approach in a phonebook: you look for the alphabet and then search)
 
+Pros:
+- Better than O(n) assuming that the BST is balanced
+- Ordered
+- Flexible Size (can place node anywhere in memory, flexible side)
+- Inserts/Deletes are also faster than an array unless the array is adding to the end (arrays have to shift)
+
+Cons:
+- No O(1) Operations (usually have to do some sort of traversal through the tree for any lookup)
+- Not the fastest for anything usually O(log n).
 
 Perfect Binary Tree:
 
@@ -46,9 +57,9 @@ Perfect Binary Tree:
 Full Binary Tree
 
 
-Interview Questions:
-
-- Why a unbalanced search tree is bad? Long Linked List and instead of being able to do O(log N) searches are O(n) linear time, loop through more items.
+Common Interview Questions:
+- Why a unbalanced search tree is bad?
+- Long Linked List and instead of being able to do O(log N) searches are O(n) linear time, loop through more items. AVL and Red Black Trees allows us to balanced a BST for performance optimizations.
 
 Helpful Links:
 - https://visualgo.net/en/bst
