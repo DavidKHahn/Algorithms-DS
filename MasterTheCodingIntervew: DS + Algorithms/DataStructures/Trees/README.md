@@ -68,6 +68,20 @@ Red Black Tree (Production Level):
 - https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
 - https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5
 
+Binary Heap:
+- Every child has a parent with a greater priority or value (this is called the Max Heap).
+- Binary Heaps are great at comparative operations (data storage, sorting algorithms).
+- Heap can be used in any algorithm where ordering is important (commonly used in priority queues).
+- Inserted values gets evaluated from left to right and then bubbles up if value is higher.
+- Inserts can still take O(log n) whereas best case would be O(1).
+- Unlike a BST there is no order from left to right.
+- Take up least amount of space possible since it's always left to right insertion (no concept of unbalanced and preserve order of insertion).
+- Can be implemented using arrays as well instead of just nodes.
+- Memory Heap != Heap Data Structure
+- In priority queues, each element has a value of priority (think of emergency room or club line for vip event).
+- Slower than BST but there is an idea of priority, insertion order, bubble up inserts based on priority (most of the time fast inserts).
+- Good for finding Max or Min Heap (findMax or findMin: O(N)).
+
 Common Interview Questions:
 - Why a unbalanced search tree is bad?
 - Long Linked List and instead of being able to do O(log N) searches are O(n) linear time, loop through more items. AVL and Red Black Trees allows us to balanced a BST for performance optimizations.
