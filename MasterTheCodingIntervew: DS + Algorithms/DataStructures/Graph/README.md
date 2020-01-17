@@ -28,6 +28,10 @@ Types of Graphs:
     6. Acyclic
     - When you can go from one node to another but not back
 
+INTERVIEW TIPS:
+- Not as big of a topic during interviews due to the amount of time to discuss and overly complex but doesn't mean it's not possible to be asked.
+- Types of Graphs are still important, how to create and hold data in graphs.
+
 USEFUL LINKS:
 
 - https://visualgo.net/en/graphds
