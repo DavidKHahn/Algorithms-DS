@@ -47,3 +47,18 @@ console.log(firstRecurringChar2([2, 5, 1, 2, 3, 5, 1, 2, 4])); // 2
 console.log(firstRecurringChar2([1, 5, 1, 2, 3, 5, 1, 2, 4])); // 1
 console.log(firstRecurringChar2([2, 3, 4, 5])); // undefined
 
+// Best approach:
+function firstDuplicate(a) {
+    for (let i of a) {
+      let posi = Math.abs(i) - 1
+      if (a[posi] < 0) return posi + 1
+      a[posi] = a[posi] * -1
+    }
+
+    return -1
+  }
+
+  firstDuplicate([2, 1, 3, 5, 3, 2])
+
+  // https://stackoverflow.com/questions/44732552/speeding-up-this-code-for-codefighters-javascript-firstduplicate-function
+
