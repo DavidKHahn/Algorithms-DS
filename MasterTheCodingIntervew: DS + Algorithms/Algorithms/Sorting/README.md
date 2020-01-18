@@ -20,9 +20,17 @@ Selection Sort:
 - Works by scanning list of items for smallest element and then swapping that element for the one in the first position (repeat until the list is completely sorted).
 - Time Complexity: O(n^2), Space Complexity: O(n) (doesn't really add any extra additional data besides input).
 
+Insertion Sort:
+
+- Not the most efficient but there's cases when it is extremely fast (particularly in small data sets).
+- Useful for times when the list is almost sorted or already sorted.
+- Best case scenario: O(n)
+-
+
 USEFUL Links:
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare
 - https://www.toptal.com/developers/sorting-algorithms (Sorting Animations)
 - https://www.bigocheatsheet.com/ (Big O CheatSheet)
+- https://www.youtube.com/user/AlgoRythmics/videos (Dancing Algorithms Playlist)
