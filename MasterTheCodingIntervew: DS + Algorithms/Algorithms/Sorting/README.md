@@ -9,7 +9,16 @@ Sorting Notes:
     The time and space complexity of the sort cannot be guaranteed as it depends on the implementation."
 
 
+Bubble Sort:
+
+- Loop through each item and bubble up based on the higher value until the list is completely sorted.
+- Lots of comparisons and goes one by one (one of the least efficient).
+- Time Complexity: O(n^2), Space Complexity: O(n)
+
+
 USEFUL Links:
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare
+- https://www.toptal.com/developers/sorting-algorithms (Sorting Animations)
+- https://www.bigocheatsheet.com/ (Big O CheatSheet)
