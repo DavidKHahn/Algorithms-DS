@@ -7,6 +7,7 @@ Recursion Notes:
 - Every recursive function needs to have something called a base case or a stop point.
 - Anything you do with a recursion CAN be done iteratively (loop).
 - Recursion can keep your code DRY (simpler, readable, less loops) but also creates an extra memory footprint(large stack).
+- Recursion tends to be more useful with Sorting, Tree Traversals (i.e. Merge Sort, Quick Sort, Tree Traversal, Graph Traversal).
 - Tail Call Optimization: allows recursion to be called without increasing the call stack.
 
 Example of Recursion:
