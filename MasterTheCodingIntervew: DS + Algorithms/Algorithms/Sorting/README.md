@@ -15,6 +15,10 @@ Bubble Sort:
 - Lots of comparisons and goes one by one (one of the least efficient).
 - Time Complexity: O(n^2), Space Complexity: O(n)
 
+Selection Sort:
+
+- Works by scanning list of items for smallest element and then swapping that element for the one in the first position (repeat until the list is completely sorted).
+- Time Complexity: O(n^2), Space Complexity: O(n) (doesn't really add any extra additional data besides input).
 
 USEFUL Links:
 
