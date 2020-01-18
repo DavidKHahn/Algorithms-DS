@@ -19,7 +19,7 @@ console.log('fibonacciIterative', fibonacciIterative(8));
 console.log('fibonacciIterative', fibonacciIterative(5));
 
 
-// O(2^N) Exponential - recursive algorithms that solve a problem of N
+// O(2^N) Exponential - recursive algorithms that solve a problem of N (time complexity is horrible worse than O(n^2))
 function fibonacciRecursive(n){
 // if n index is less than 2 return its current number
     if (n < 2) {
