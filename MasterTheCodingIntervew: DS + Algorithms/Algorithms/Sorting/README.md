@@ -25,7 +25,17 @@ Insertion Sort:
 - Not the most efficient but there's cases when it is extremely fast (particularly in small data sets).
 - Useful for times when the list is almost sorted or already sorted.
 - Best case scenario: O(n)
--
+
+Merge Sort:
+
+- Use Divide & Conquer method which usually gives a O(n log n).
+- Do not have nested for loops which saves time.
+- Efficient but also uses recursion.
+
+Quick Sort:
+
+- Use Divide & Conquer method which usually gives a O(n log n).
+- Do not have nested for loops which saves time.
 
 USEFUL Links:
 
@@ -34,3 +44,4 @@ USEFUL Links:
 - https://www.toptal.com/developers/sorting-algorithms (Sorting Animations)
 - https://www.bigocheatsheet.com/ (Big O CheatSheet)
 - https://www.youtube.com/user/AlgoRythmics/videos (Dancing Algorithms Playlist)
+- https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important (Stability in Sorting Algorithms)
