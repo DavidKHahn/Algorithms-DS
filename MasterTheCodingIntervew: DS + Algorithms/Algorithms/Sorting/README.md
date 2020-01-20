@@ -31,11 +31,17 @@ Merge Sort:
 - Use Divide & Conquer method which usually gives a O(n log n).
 - Do not have nested for loops which saves time.
 - Efficient but also uses recursion.
+- Really useful and one of the most used sorting algorithms.
+- Space Complexity: O(n)
 
 Quick Sort:
 
 - Use Divide & Conquer method which usually gives a O(n log n).
 - Do not have nested for loops which saves time.
+- Uses a pivoting technique to break main list into smaller lists which is repeated until sorting is completed.
+- Worst case is O(n^2) when the pivot is the smallest or largest item in the list then you're not really splitting the list in half which makes merge sort better in this case.
+- Really useful and one of the most used sorting algorithms but if you can't guarantee that there's no bad data or pivot then should be avoided.
+- Space Complexity: O(log(n))
 
 USEFUL Links:
 
