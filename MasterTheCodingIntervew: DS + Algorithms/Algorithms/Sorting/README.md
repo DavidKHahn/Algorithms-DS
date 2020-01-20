@@ -52,6 +52,25 @@ Heap Sort:
 
 - Can sort in place and doesn't have the worst case quadratic behavior that quicksort has or memory usage that merge sort has but on average is slower than quicksort in most cases.
 - Unless worried about worst case and memory then heap sort can be an option.
+- "The secret of Quicksort is: It almost doesn't do unnecessary element swaps. Swap is time consuming and with Heapsort, even if all of your data is already ordered, you are going to swap 100% of elements to order the array." (Source: https://stackoverflow.com/questions/2467751/quicksort-vs-heapsort)
+
+Radix Sort:
+
+- With comparison sort we decided the order of the numbers based on asking whether if the element value is bigger than the other one but non-comparison is different.
+- Non-Comparison sort uses the way numbers are stored in computers based on 0's and 1's to sort things.
+- Only works with numbers specifically integers in a restricted range (small range: 0 - 100).
+- Useful for fixed length of integers.
+- Time Complexity: O(nk), Space Complexity: O(n+k)
+- Some arguments that this can be slow.
+
+Counting Sort:
+
+- With comparison sort we decided the order of the numbers based on asking whether if the element value is bigger than the other one but non-comparison is different.
+- Non-Comparison sort uses the way numbers are stored in computers based on 0's and 1's to sort things.
+- Only works with numbers specifically integers in a restricted range (small range: 0 - 100).
+- Useful for fixed length of integers.
+- Time Complexity: O(n+k), Space Complexity: O(k)
+- Some arguments that this can be slow.
 
 
 USEFUL Links:
@@ -64,3 +83,7 @@ USEFUL Links:
 - https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important (Stability in Sorting Algorithms)
 - https://brilliant.org/wiki/heap-sort/ (Heap Sort)
 - https://stackoverflow.com/questions/2467751/quicksort-vs-heapsort (Quicksort vs HeapSort)
+- https://brilliant.org/wiki/radix-sort/ (Radix Sort)
+- https://www.cs.usfca.edu/~galles/visualization/RadixSort.html (Radix Sort Animation)
+- https://brilliant.org/wiki/counting-sort/ (Counting Sort)
+- https://www.cs.usfca.edu/~galles/visualization/CountingSort.html (Counting Sort Animation)
