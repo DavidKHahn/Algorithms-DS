@@ -72,6 +72,10 @@ Counting Sort:
 - Time Complexity: O(n+k), Space Complexity: O(k)
 - Some arguments that this can be slow.
 
+INTERVIEW TIP:
+
+- We can assume Merge Sort is something we can implement with a library, documentation. We can use divide and conquer the code to make it more efficient.
+
 
 USEFUL Links:
 
