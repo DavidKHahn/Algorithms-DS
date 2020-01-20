@@ -48,6 +48,12 @@ Quick Sort:
 - If pivot is not picked properly then sorting can be really slow.
 - Space Complexity: O(log(n))
 
+Heap Sort:
+
+- Can sort in place and doesn't have the worst case quadratic behavior that quicksort has or memory usage that merge sort has but on average is slower than quicksort in most cases.
+- Unless worried about worst case and memory then heap sort can be an option.
+
+
 USEFUL Links:
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
@@ -56,3 +62,5 @@ USEFUL Links:
 - https://www.bigocheatsheet.com/ (Big O CheatSheet)
 - https://www.youtube.com/user/AlgoRythmics/videos (Dancing Algorithms Playlist)
 - https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important (Stability in Sorting Algorithms)
+- https://brilliant.org/wiki/heap-sort/ (Heap Sort)
+- https://stackoverflow.com/questions/2467751/quicksort-vs-heapsort (Quicksort vs HeapSort)
