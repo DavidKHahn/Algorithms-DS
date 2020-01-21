@@ -3,6 +3,7 @@
 // Inorder - Everything is in order
 // Preorder - Useful when we want to recreate a tree easily
 // Postorder - Start from left side children then to next level, repeat and return the root.
+// Memory consumption is O(h) which would give us worst case scenario; h equals height of tree.
 
 class Node {
     constructor(value) {
