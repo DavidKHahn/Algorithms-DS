@@ -149,7 +149,8 @@ class BinarySearchTree {
     breadthFirstSearch() {
         let currentNode = this.root;
         let list = [];
-        let queue = [9];
+        // queue can get pretty large since it has to keep references to child nodes
+        let queue = [];
         queue.push(currentNode);
         // as long queue exists
         while(queue.length > 0) {
@@ -169,6 +170,7 @@ class BinarySearchTree {
                 queue.push(currentNode.right);
             }
         }
+        return list;
     }
 }
 //      9
@@ -183,12 +185,8 @@ tree.insert(20);
 tree.insert(170);
 tree.insert(15);
 tree.insert(1);
-console.log(tree.lookup(170))
-console.log(tree.lookup(20))
-console.log(tree.remove(170))
-console.log(JSON.stringify(traverse(tree.root)))
 console.log(tree.breadthFirstSearch());
-
+console.log(JSON.stringify(traverse(tree.root)))
 
 function traverse(node) {
     const tree = { value: node.value };
