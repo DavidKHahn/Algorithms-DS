@@ -16,6 +16,7 @@ Searching/Traversal Notes:
  - O(log N)
 
 - Depth First Search/Traversal:
+ - Graph Traversals -> DFS (peer2peer networks, Google Maps, Amazon's recommendations)
  - Time complexity is O(n)
  - Hash Tables aren't ordered which is why Trees/Graphs are used often when we want to search nodes or visit every node.
  - Represents a lot of data that models the real world.
@@ -24,11 +25,12 @@ Searching/Traversal Notes:
  - We want to go as deep as possible with DFS starting from left then to the right hence depth first.
  - If you have an idea or know target node is closer to bottom of tree than DFS is better than BFS since it'll search with the deep depths.
 
- - Pros: Less memory, Does Path exist? (Determining whether a path exists between node and source).
+ - Pros: Less memory, Does Path exist? (Determining whether a path exists between nodes).
  - Cons: Can get slow (not good at finding shortest path).
 
 
 - Breadth First Search/Traversal:
+ - Graph Traversals -> BFS (peer2peer networks, Google Maps, Amazon's recommendations)
  - Time complexity is O(n)
  - Hash Tables aren't ordered which is why Trees/Graphs are used often when we want to search nodes or visit every node.
  - Represents a lot of data that models the real world.
@@ -43,3 +45,4 @@ Searching/Traversal Notes:
 USEFUL LINKS:
 
 - https://stackoverflow.com/questions/9844193/what-is-the-time-and-space-complexity-of-a-breadth-first-and-depth-first-tree-tr
+- https://leetcode.com/problems/validate-binary-search-tree/ (Common Interview Question for BST)
