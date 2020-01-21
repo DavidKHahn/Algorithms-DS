@@ -17,7 +17,7 @@ Searching/Traversal Notes:
 
 - Depth First Search/Traversal:
  - Graph Traversals -> DFS (peer2peer networks, Google Maps, Amazon's recommendations)
- - Time complexity is O(n)
+ - Time complexity is O(n) (visit every single node)
  - Hash Tables aren't ordered which is why Trees/Graphs are used often when we want to search nodes or visit every node.
  - Represents a lot of data that models the real world.
  - Search follows one branch of the tree down as many levels as possible until the target notice is found or the end is reached.  It continues at the nearest ancestor with an unexplored child.
@@ -31,7 +31,7 @@ Searching/Traversal Notes:
 
 - Breadth First Search/Traversal:
  - Graph Traversals -> BFS (peer2peer networks, Google Maps, Amazon's recommendations)
- - Time complexity is O(n)
+ - Time complexity is O(n) (visit every single node)
  - Hash Tables aren't ordered which is why Trees/Graphs are used often when we want to search nodes or visit every node.
  - Represents a lot of data that models the real world.
  - Start with the root node, move left to right across the second level then move to left to right across the third and so forth until you find the node or tree ends.
