@@ -25,8 +25,8 @@ Searching/Traversal Notes:
  - We want to go as deep as possible with DFS starting from left then to the right hence depth first.
  - If you have an idea or know target node is closer to bottom of tree than DFS is better than BFS since it'll search with the deep depths.
 
- - Pros: Less memory, Does Path exist? (Determining whether a path exists between nodes).
- - Cons: Can get slow (not good at finding shortest path).
+ - Pros: Uses less memory, Does Path exist? (Determining whether a path exists between nodes).
+ - Cons: Can get slow depending the deeper the graph (more recursive calls).
 
 
 - Breadth First Search/Traversal:
@@ -37,10 +37,17 @@ Searching/Traversal Notes:
  - Start with the root node, move left to right across the second level then move to left to right across the third and so forth until you find the node or tree ends.
  - Uses additional memory since it's necessary to track child nodes of all the nodes on a given level while searching that level.
  - If you have an idea or know target node is closer to top of tree than BFS is better than DFS since it'll search with closest nodes first.
+ - BFS allows us to convert a graph essentially into a tree (we know who the children of the parent nodes and the grandchildren nodes).
 
- - Pros: Very good at finding shortest path, closer nodes.
- - Cons: More memory.
+ - Pros: Very good at finding shortest path between two nodes in a graph, closer nodes.
+ - Cons: Uses more memory to keep track of parent nodes/grandchildren nodes.
 
+- Dijkstra + Bellman-Ford Algorithms:
+ - In DFS, BFS we do not consider the weight each edge has but with distances the weight is actually higher vs lower so we use Dijkstra or the Bellman-Ford to figure out shortest path algorithms (special case).
+ - Bellman-Ford Algorithms are particularly good at finding shortest path since they can also accomodate negative weights (Dijkstra's connect use negative).
+ - Bellman-Ford can take a long time to run in terms of complexity and not the most efficient.
+ - Worst Case: O(n^2)
+ - Dijkstra's is a bit more efficient.
 
 USEFUL LINKS:
 
