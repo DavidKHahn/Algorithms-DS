@@ -1,0 +1,1 @@
+// With BFS, we have to go from top to the left and visit all nodes within this level.  During this process, BFS keeps a reference of all the children nodes of every node that we visit (this is where the memory is coming from).
