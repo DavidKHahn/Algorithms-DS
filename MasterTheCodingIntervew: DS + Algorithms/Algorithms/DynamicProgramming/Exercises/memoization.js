@@ -30,10 +30,22 @@ function fibonacciMaster(){
         }
     }
 }
+// Bottom Up Approach: Start from simplest solution from the bottom and slowly work your way up higher towards more complex problems
+// easier to see but harder to figure out when to use
+// Avoids recursion
+function fibonacciMaster2(n){
+   let answer = [0, 1];
+    for (let i = 2; i <= n; i++) {
+        answer.push(answer[i-2] + answer[i-1]);
+    }
+    return answer.pop();
+}
+
 
 const fasterFib = fibonacciMaster();
 console.log('Slow', fibonacci(10));
 console.log('DP', fasterFib(10));
+console.log('DP_2', fibonacciMaster2(10));
 
 console.log('we did ' + calculations + ' calculations');
 // we did 177 calculations (Slow)
